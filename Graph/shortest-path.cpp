@@ -30,6 +30,7 @@ int Floyd() {
         for(int v = 1; v <= n; v++) 
             c[u][v] = u == v ? 0 : oo, tr[u][v] = v;
     readGraph();
+    //loop from 1 to n
     for(int k = 1; k <= n; k++)
         for(int u = 1; u <= n; u++)
             for(int v = 1; v <= n; v++)
