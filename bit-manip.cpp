@@ -9,7 +9,7 @@ ll bitInv(ll x, int i) { return (1LL << i) ^ x; }
 
 
 ll leftMost1(ll x) {
-    for(int i = 62; i >= 0; i--) 
+    for(int i = 63; i >= 0; i--) 
         if (bit(x, i) == 1) return i;
     return -1;
 }
